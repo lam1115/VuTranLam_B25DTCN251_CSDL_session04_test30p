@@ -47,3 +47,12 @@ select * from products;
 
 -- Lấy danh sách sản phẩm có số lượng lớn hơn 15
 select * from products where stock > 15;
+
+-- Lấy danh sách sản phẩm có giá từ 1000000 đến 25000000
+select * from products where price >= 1000000 and price <= 25000000;
+
+-- Lấy sản phẩm tên không phải iPhone 15 và còn trong kho
+select * from products where product_name <> 'iPhone 15' and stock > 0;
+
+-- Lấy sản phẩm không thục danh mục 1 và có giá hơn 500000
+select * from product where category_id <> 1 and price > 500000;
