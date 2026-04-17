@@ -33,7 +33,8 @@ set price = 26000000 where product_name = 'iPhone 15';
 
 -- Tăng số lượng tồn kho lên 10 cho tất cả sản phẩm
 update products
-set stock = stock + 10;
+set stock = stock + 10
+where category_id = 1;
 
 -- Xóa sản phẩm có id = 4
 delete from products where product_id = 4;
