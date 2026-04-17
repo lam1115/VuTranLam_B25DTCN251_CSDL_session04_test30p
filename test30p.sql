@@ -55,4 +55,4 @@ select * from products where price >= 1000000 and price <= 25000000;
 select * from products where product_name <> 'iPhone 15' and stock > 0;
 
 -- Lấy sản phẩm không thục danh mục 1 và có giá hơn 500000
-select * from product where category_id <> 1 and price > 500000;
+select * from products where category_id <> 1 and price > 500000;
